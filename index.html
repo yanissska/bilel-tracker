@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilel Ban Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Bilel Ban Tracker 🚨</h1>
+        <p class="subtitle">Statut de <strong>bilel_mlj</strong> en temps réel</p>
+        
+        <div class="twitch-card" id="twitch-card">
+            <img id="profile-pic" src="" alt="bilel_mlj" class="avatar" onerror="this.onerror=null;this.src='https://static-cdn.jtvnw.net/jtv_user_pictures/553df011-0b5d-4f6e-8c1c-6e5b2a9b0a1a-profile_image-70x70.png'">
+            <h2 id="display-name">bilel_mlj</h2>
+            <div id="ban-status" class="status-loading">
+                <span class="status-dot loading"></span> Vérification en cours...
+            </div>
+            <a href="https://www.twitch.tv/bilel_mlj/report" class="report-button" target="_blank">
+                🚨 Signaler cette chaîne
+            </a>
+            <p class="last-updated">Dernière mise à jour: <span id="update-time">-</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
